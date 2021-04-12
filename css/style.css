@@ -1,0 +1,213 @@
+/* COLORS */
+
+:root {
+    --white: #fff;
+    --red: #FF505C;
+    --linear-red-first: rgb(255, 143, 113);
+    --linear-red-second: rgb(255, 62, 85);
+    --black: #1F3E5A;
+    --text: #4C5862;
+    --back-color: linear-gradient( 135deg, rgb(255, 143, 113), rgb(255, 62, 85))
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Overpass";
+    font-size: 16px;
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 64px;
+    line-height: 98px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.text-primary {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 43px;
+}
+
+.site-header {
+    padding-top: 60px;
+    padding-bottom: 155px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url(../images/bg-pattern-intro.svg);
+    background: url(../images/bg-pattern-intro.svg), var(--back-color);
+    background-repeat: no-repeat;
+    background-position: 23%;
+    border-bottom-left-radius: 100px;
+}
+
+.btn {
+    border: 1px solid var(--white);
+    border-radius: 28px;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 64px;
+}
+
+.nav-item {
+    margin-right: 32px;
+    position: relative;
+    padding: 15px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.75;
+}
+
+.nav-link::after {
+    width: 10px;
+    height: 5px;
+    display: block;
+    margin-left: 8px;
+    content: "";
+    background-image: url(../images/menu_icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-item:hover .nav-link {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.nav-item:hover .nav-link::after {
+    transform: rotate(180deg);
+}
+
+.sitenav__login {
+    margin-right: 32px;
+    opacity: 0.75;
+    transition: all 0.3s ease;
+}
+
+.sitenav__login:hover {
+    opacity: 1;
+}
+
+.sitenav__btn {
+    padding: 15px 40px;
+    color: var(--red);
+    background: var(--white);
+    transition: all 0.3s ease;
+}
+
+.sitenav__btn:hover {
+    color: var(--white);
+    background: #FF7B86;
+}
+
+.dropdown {
+    width: 140px;
+    display: none;
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    flex-direction: column;
+    padding: 24px;
+    background: var(--white);
+    border-radius: 6px;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+    color: #2D2E40;
+    font-size: 15px;
+    line-height: 33px;
+    font-weight: 300;
+}
+
+.dropdown a:hover {
+    font-weight: 700;
+    overflow: hidden;
+}
+
+.header__information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__information-btn-primary {
+    padding: 15px 17px;
+    margin-right: 16px;
+    background: var(--white);
+    color: var(--red);
+    transition: all 0.3s ease;
+}
+
+.header__information-btn-primary:hover {
+    color: var(--white);
+    background: #FF7B86;
+}
+
+.header__information-btn-secondary {
+    padding: 15px 25px;
+    transition: all 0.3s ease;
+}
+
+.header__information-btn-secondary:hover {
+    color: var(--red);
+    background: var(--white);
+}
