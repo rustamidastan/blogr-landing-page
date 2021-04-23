@@ -73,6 +73,7 @@ h1 {
     font-weight: 300;
     color: var(--white);
     margin-bottom: 43px;
+    display: block;
 }
 
 .site-header {
@@ -96,6 +97,10 @@ h1 {
     display: flex;
     align-items: center;
     margin-bottom: 120px;
+}
+
+.brand-logo img {
+    display: block;
 }
 
 .nav-list {
@@ -265,6 +270,7 @@ h1 {
 }
 
 .feature-info-item-title {
+    display: block;
     font-size: 28px;
     line-height: 1;
     font-weight: 600;
@@ -384,6 +390,14 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding-right: 170px;
+}
+
+.footer-logo img {
+    display: block;
+}
+
+.footer-logo {
+    height: 40px;
 }
 
 .footer-list-title {
